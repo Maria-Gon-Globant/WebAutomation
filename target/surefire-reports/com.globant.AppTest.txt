@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.globant.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.245 s <<< FAILURE! - in com.globant.AppTest
+googleSetUp(com.globant.AppTest)  Time elapsed: 0.112 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'url' is required by @Test on method googleSetUp but has not been marked @Optional or defined
+
+
