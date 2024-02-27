@@ -15,4 +15,15 @@ public class CartPage extends BasePage {
     public CartPage(WebDriver driver) {
         super(driver);
     }
+
+    @FindBy(css = "#checkout")
+    private WebElement checkoutButton;
+
+    @FindBy(css = "#continue")
+    private WebElement continueButton;
+
+    @FindBy(css = "#finish")
+    private WebElement finishButton;
+
+
 }
