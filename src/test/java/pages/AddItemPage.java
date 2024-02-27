@@ -18,4 +18,15 @@ public class AddItemPage extends BasePage {
 
     @FindBy(css = "[data-test = 'add-to-cart-sauce-labs-bolt-t-shirt']")
     private WebElement item3;
+
+    public void clickItem1(){
+        this.item1.click();
+    }
+    public void clickItem2(){
+        this.item2.click();
+    }
+    public void clickItem3(){
+        this.item3.click();
+    }
+
 }
