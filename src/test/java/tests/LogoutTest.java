@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.LoginPage;
@@ -8,7 +9,7 @@ import utils.baseTest.BaseTest;
 
 public class LogoutTest extends BaseTest {
 
-    @BeforeTest
+    @BeforeMethod
     public void Login(){
         LoginPage loginPage = loadLoginPage();
         loginPage.sendUsername();
@@ -18,7 +19,7 @@ public class LogoutTest extends BaseTest {
 
     @Test
     public void Logout(){
-        LogoutPage logoutPage = new LogoutPage(getDriver().getDriver());
+        LogoutPage logoutPage = new LogoutPage(getDriver());
         logoutPage.clickBurgerMenuButton();
         logoutPage.getImplicitWait();
         logoutPage.clickLogoutButton();
