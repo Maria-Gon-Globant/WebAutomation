@@ -1,9 +1,17 @@
 package pages;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import utils.basePage.BasePage;
 
 public class CartPage extends BasePage {
+
+    private static final String name = "Mike";
+    private static final String lastName = "Scott";
+    private static final int zip = 11111;
+
+
     public CartPage(WebDriver driver) {
         super(driver);
     }
