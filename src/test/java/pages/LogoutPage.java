@@ -17,11 +17,10 @@ public class LogoutPage extends BasePage {
     @FindBy(id = "logout_sidebar_link")
     private WebElement logoutButton;
 
+    @FindBy(className = "login_logo")
+    private WebElement pageLogoText;
+
     public void clickBurgerMenuButton(){
         this.burgerMenuButton.click();
-    }
-
-    public void clickLogoutButton(){
-        this.logoutButton.click();
     }
 }
