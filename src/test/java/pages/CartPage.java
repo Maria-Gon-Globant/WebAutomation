@@ -7,15 +7,14 @@ import utils.basePage.BasePage;
 
 public class CartPage extends BasePage {
 
-    private static final String name = "Mike";
-    private static final String lastName = "Scott";
-    private static final int zip = 11111;
+    private static final String nameText = "Mike";
+    private static final String lastNameText = "Scott";
+    private static final String zipText = "11111";
 
 
     public CartPage(WebDriver driver) {
         super(driver);
     }
-
     @FindBy(css = "#checkout")
     private WebElement checkoutButton;
 
