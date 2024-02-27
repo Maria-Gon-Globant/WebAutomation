@@ -23,4 +23,11 @@ public class LogoutPage extends BasePage {
     public void clickBurgerMenuButton(){
         this.burgerMenuButton.click();
     }
+    public void clickLogoutButton(){
+        this.logoutButton.click();
+    }
+    public boolean areInLogin(String logoText){
+        waitElementVisibility(pageLogoText);
+        return pageLogoText.isDisplayed() && pageLogoText.getText().equalsIgnoreCase(logoText);
+    }
 }
