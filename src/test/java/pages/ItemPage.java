@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utils.basePage.BasePage;
 
-public class AddItemPage extends BasePage {
-    public AddItemPage(WebDriver driver) {
+public class ItemPage extends BasePage {
+    public ItemPage(WebDriver driver) {
         super(driver);
     }
 
