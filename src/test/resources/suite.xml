@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/Users/m.gonzalezescallon/IdeaProjects/WebAutomation">
-        <parameter name="url" value="https://www.saucedemo.com/"></parameter>
+    <parameter name="url" value="https://www.saucedemo.com/"/>
+    <parameter name="loginTitle" value="Swag Labs" />
+    <test verbose="2" preserve-order="true" name="LogoutTest">
         <classes>
-            <class name="com.globant.AppTest"></class>
+            <class name="tests.LogoutTest"/>
         </classes>
     </test>
 </suite>
