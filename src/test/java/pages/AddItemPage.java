@@ -38,5 +38,18 @@ public class AddItemPage extends BasePage {
         this.assItem3.click();
     }
 
+    public void clickCartButton(){
+        this.cartButton.click();
+    }
+
+    public void clickRemoveItem1(){
+        this.removeItem1.click();
+    }
+    public void clickRemoveItem2(){
+        this.removeItem2.click();
+    }
+    public void clickRemoveItem3(){
+        this.removeItem3.click();
+    }
 
 }
