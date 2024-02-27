@@ -1,5 +1,6 @@
 package pages;
 
+import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +13,9 @@ public class ItemPage extends BasePage {
 
     @FindBy(css = "[name = 'add-to-cart-sauce-labs-backpack']")
     private WebElement addItem1;
+
+    //I put them here because if someone wants to test removing the items without going to the cart page,
+    //they can use the same web elements
     @FindBy(name = "remove-sauce-labs-backpack")
     private WebElement removeItem1;
 
@@ -38,8 +42,9 @@ public class ItemPage extends BasePage {
         this.assItem3.click();
     }
 
-    public void clickCartButton(){
+    public CartPage clickCartButton(){
         this.cartButton.click();
+        return new CartPage(getDriver());
     }
 
     public void clickRemoveItem1(){
