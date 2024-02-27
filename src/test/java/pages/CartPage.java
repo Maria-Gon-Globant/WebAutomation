@@ -42,4 +42,19 @@ public class CartPage extends BasePage {
     public void clickFinishButton(){
         this.finishButton.click();
     }
+
+    public void sendName(){
+        this.name.click();
+        this.name.sendKeys(nameText);
+    }
+
+    public void sendLastName(){
+        this.lastName.click();
+        this.lastName.sendKeys(lastNameText);
+    }
+
+    public void sendZip(){
+        this.zip.click();
+        this.zip.sendKeys(zipText);
+    }
 }
