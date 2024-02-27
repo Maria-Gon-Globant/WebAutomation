@@ -21,4 +21,19 @@ public class LoginPage extends BasePage {
     @FindBy(id = "login-button")
     private WebElement loginButton;
 
+    public void sendUsername(){
+        this.username.click();
+        this.username.sendKeys(usernameText);
+    }
+
+    public void sendPassword(){
+        this.password.click();
+        this.password.sendKeys(passwordText);
+    }
+
+    public void clickLoginButton(){
+        this.loginButton.click();
+    }
+
+
 }
