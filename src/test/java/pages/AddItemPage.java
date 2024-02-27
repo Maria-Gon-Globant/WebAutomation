@@ -25,7 +25,8 @@ public class AddItemPage extends BasePage {
     @FindBy(css = "[data-test = 'remove-sauce-labs-bolt-t-shirt']")
     private WebElement removeItem3;
 
-
+    @FindBy(className = "shopping_cart_link")
+    private WebElement cartButton;
 
     public void clickItem1(){
         this.addItem1.click();
@@ -36,5 +37,6 @@ public class AddItemPage extends BasePage {
     public void clickItem3(){
         this.assItem3.click();
     }
+
 
 }
