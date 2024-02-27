@@ -25,5 +25,13 @@ public class CartPage extends BasePage {
     @FindBy(css = "#finish")
     private WebElement finishButton;
 
-
+    public void clickCheckoutButton(){
+        this.checkoutButton.click();
+    }
+    public void clickContinueButton(){
+        this.continueButton.click();
+    }
+    public void clickFinishButton(){
+        this.finishButton.click();
+    }
 }
