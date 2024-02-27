@@ -11,22 +11,22 @@ public class AddItemPage extends BasePage {
     }
 
     @FindBy(css = "[name = 'add-to-cart-sauce-labs-backpack']")
-    private WebElement item1;
+    private WebElement addItem1;
 
     @FindBy(css = "[id = 'add-to-cart-sauce-labs-bike-light']")
-    private WebElement item2;
+    private WebElement addItem2;
 
     @FindBy(css = "[data-test = 'add-to-cart-sauce-labs-bolt-t-shirt']")
-    private WebElement item3;
+    private WebElement assItem3;
 
     public void clickItem1(){
-        this.item1.click();
+        this.addItem1.click();
     }
     public void clickItem2(){
-        this.item2.click();
+        this.addItem2.click();
     }
     public void clickItem3(){
-        this.item3.click();
+        this.assItem3.click();
     }
 
 }
