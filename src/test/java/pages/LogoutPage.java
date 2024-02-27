@@ -16,4 +16,12 @@ public class LogoutPage extends BasePage {
 
     @FindBy(id = "logout_sidebar_link")
     private WebElement logoutButton;
+
+    public void clickBurgerMenuButton(){
+        this.burgerMenuButton.click();
+    }
+
+    public void clickLogoutButton(){
+        this.logoutButton.click();
+    }
 }
