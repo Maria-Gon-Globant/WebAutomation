@@ -15,4 +15,12 @@ public class LogoutTest extends BaseTest {
         loginPage.sendPassword();
         loginPage.clickLoginButton();
     }
+
+    @Test
+    public void Logout(){
+        LogoutPage logoutPage = new LogoutPage(getDriver().getDriver());
+        logoutPage.clickBurgerMenuButton();
+        logoutPage.getImplicitWait();
+        logoutPage.clickLogoutButton();
+    }
 }
