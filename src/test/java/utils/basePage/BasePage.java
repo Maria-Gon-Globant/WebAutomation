@@ -5,6 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 public class BasePage {
     protected WebDriver driver;
@@ -23,5 +24,7 @@ public class BasePage {
     public WebDriverWait getWait() {
         return wait;
     }
-
+    public void getImplicitWait() {
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    }
 }
