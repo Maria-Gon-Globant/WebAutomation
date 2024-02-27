@@ -24,6 +24,15 @@ public class CartPage extends BasePage {
     @FindBy(css = "#finish")
     private WebElement finishButton;
 
+    @FindBy(css = "#first-name")
+    private WebElement name;
+
+    @FindBy(css = "#last-name")
+    private WebElement lastName;
+
+    @FindBy(css = "#postal-code")
+    private WebElement zip;
+
     public void clickCheckoutButton(){
         this.checkoutButton.click();
     }
