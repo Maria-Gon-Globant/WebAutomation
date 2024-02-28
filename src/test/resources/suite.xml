@@ -3,6 +3,7 @@
 <suite name="All Test Suite">
     <parameter name="url" value="https://www.saucedemo.com/"/>
     <parameter name="loginTitle" value="Swag Labs" />
+    <parameter name="successText" value="Thank you for your order!" />
     <test verbose="2" preserve-order="true" name="LogoutTest">
         <classes>
             <class name="tests.LogoutTest"/>
@@ -11,6 +12,11 @@
     <test verbose="2" preserve-order="true" name="RemoveItemTest">
         <classes>
             <class name="tests.RemoveItemTest"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="PurchaseProductTest">
+        <classes>
+            <class name="tests.PurchaseProductTest"/>
         </classes>
     </test>
 </suite>
