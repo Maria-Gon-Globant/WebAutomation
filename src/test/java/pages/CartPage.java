@@ -62,4 +62,8 @@ public class CartPage extends BasePage {
         this.zip.click();
         this.zip.sendKeys(zipText);
     }
+
+    public int getSize(){
+        return removeItems.size();
+    }
 }
