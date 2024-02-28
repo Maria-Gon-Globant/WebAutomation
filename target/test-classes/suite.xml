@@ -2,11 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <parameter name="url" value="https://www.saucedemo.com/"/>
-    <parameter name="loginTitle"
-               value="Swag Labs" />
+    <parameter name="loginTitle" value="Swag Labs" />
     <test verbose="2" preserve-order="true" name="LogoutTest">
         <classes>
             <class name="tests.LogoutTest"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="RemoveItemTest">
+        <classes>
+            <class name="tests.RemoveItemTest"/>
         </classes>
     </test>
 </suite>

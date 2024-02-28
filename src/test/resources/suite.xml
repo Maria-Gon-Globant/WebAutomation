@@ -8,4 +8,9 @@
             <class name="tests.LogoutTest"/>
         </classes>
     </test>
+    <test verbose="2" preserve-order="true" name="RemoveItemTest">
+        <classes>
+            <class name="tests.RemoveItemTest"/>
+        </classes>
+    </test>
 </suite>
