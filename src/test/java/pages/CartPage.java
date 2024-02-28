@@ -38,6 +38,9 @@ public class CartPage extends BasePage {
     @FindBy(className = "removed_cart_item")
     private List<WebElement> removeItems;
 
+    @FindBy(className = "complete-header")
+    private WebElement successfulText;
+
     public void clickCheckoutButton(){
         this.checkoutButton.click();
     }
@@ -65,5 +68,10 @@ public class CartPage extends BasePage {
 
     public int getSize(){
         return removeItems.size();
+    }
+
+    public boolean successfulPurchase(String text){
+        waitElementVisibility(successfulText);
+        return successfulText.isDisplayed() && successfulText.getText().equalsIgnoreCase(text);
     }
 }
