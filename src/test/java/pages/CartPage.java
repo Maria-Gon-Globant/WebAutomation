@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import utils.basePage.BasePage;
 
+import java.util.List;
+
 public class CartPage extends BasePage {
 
     private static final String nameText = "Mike";
@@ -33,6 +35,9 @@ public class CartPage extends BasePage {
     @FindBy(css = "#postal-code")
     private WebElement zip;
 
+    @FindBy(className = "removed_cart_item")
+    private List<WebElement> removeItems;
+
     public void clickCheckoutButton(){
         this.checkoutButton.click();
     }
@@ -56,5 +61,9 @@ public class CartPage extends BasePage {
     public void sendZip(){
         this.zip.click();
         this.zip.sendKeys(zipText);
+    }
+
+    public int getSize(){
+        return removeItems.size();
     }
 }
